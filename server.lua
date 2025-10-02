@@ -122,13 +122,11 @@ AddEventHandler('playerConnecting', function(playerName, setKickReason, deferral
         return
     end
 
-    -- All good
     deferrals.update('Whitelist validated. Welcome!')
     deferrals.done()
     log('ALLOW | name=%s src=%s discordId=%s', tostring(playerName), tostring(src), tostring(discordId))
 end)
 
--- Optional: On resource start, warn if oxmysql not running
 CreateThread(function()
     Wait(500)
     ensureOxmysql()
