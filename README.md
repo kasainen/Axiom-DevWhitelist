@@ -4,7 +4,7 @@ Concise, server-only whitelist for developer servers. Uses oxmysql to check Disc
 
 ## Requirements
 - oxmysql (must start before this resource)
-- Axiom B1 Discord Bot configured to write whitelist rows
+- Axiom B1 Discord Bot configured to write whitelist rows (Unreleased)
 
 ## Install
 Add to `server.cfg`:
